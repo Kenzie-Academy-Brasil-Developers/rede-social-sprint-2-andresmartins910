@@ -1,51 +1,229 @@
-/*
-Theme Name: Instagram
-Author: Kenzie Academy
-Author URI: kenzie.com.br;
-Version: 1.0
- 
---------------------------------------------
-SUGESTÃO DE ESTRUTURAÇÃO BASE 
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** BODY
-**** TOPO
-**** RODAPÉ
-**** PÁGINA INICIAL
-*/
+/* Mobile First */
+/* Body */
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #262626;
+	max-width: 935px;
+	margin: 0 auto;
+}
+/* Body End */
 
-/* VARIÁVEIS */
-:root{
-  
+
+/* Header */
+header {
+	width: 100%;
+	padding: 20px 0px;
+	text-align: center;
 }
 
-/*BODY*/
-body{
+header img {
+	width: 210px;
+}
+/* Header End */
+
+
+/* Footer*/
+footer {
+	width: 100%;
+	margin: 20px auto;
+	text-align: center;
+	line-height: 50px;
+}
+
+.footer-nav a {
+	text-decoration: none;
+	font-size: small;
+	padding-right: 15px;
+}
+
+.footer-nav a:visited {
+	color: #262626;
+}
+
+.copyright {
+	font-size: small;
+}
+/* Footer End */
+
+/* Main */
+main {
+	margin-top: 20px;
+}
+
+main .profile-content {
+	display: flex;
+	flex-direction: column;
+}
+
+main .profile-photo {
+	margin: 0 auto
+}
+
+main .profile-photo img {
+	border: 5px double lightgray;
+	border-radius: 50%;
+}
+
+main .profile-content {
+	margin: 30px;
+	text-align: justify;
+}
+
+main .profile-info {
+	line-height: 20px;
+}
+
+main .profile-info h1 {
+	font-weight: 500;
+	font-size: 1.5rem;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+main .profile-info ul {
+	margin-top: 10px;
+}
+
+main .profile-info h2 {
+	margin-top: 30px;
+	font-weight: bold;
+}
+
+main .profile-info p a {
+	line-height: 10px;
+}
+
+main .profile-data {
+	display: flex;
+	margin-top: 30px;
+}
+
+main .profile-data h2 {
+	font-weight: bold;
+}
+
+main .profile-data span {
+	font-weight: bold;
+}
+
+main .profile-data p {
+	margin-right: 30px;
+}
+
+main .highlighted-stories ul {
+	display: flex;
+	flex-direction: row;
+	margin: 15px;
+	padding: 25px 40px 25px 40px;
+	text-align: center;
+}
+
+main .highlighted-stories ul li {
+	line-height: 25px;
+	font-weight: bold;
+	margin: 0 auto;
+}
+
+main .highlighted-stories img {
+	width: 77px;
+	border: 3px double rgb(209, 209, 209);
+	border-radius: 50%;
+}
+
+main .profile-posts {
+	margin: 0 auto;
 
 }
 
-/*TOPO*/
-header{
-	
+main .profile-posts nav {
+	text-align: center;
+	border-top: 1px solid #d6d6d6;
+	padding: 15px;
+	margin-bottom: 15px;
 }
 
-/*RODAPÉ*/
-footer{
+main .profile-posts nav a {
+	padding: 15px;
+	font-weight: bold;
+	font-size: small;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: rgb(155, 155, 155);
+}
+
+main .profile-posts ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+main .profile-posts ul li {
+	margin: 5px;
 
 }
 
-/*PÁGINA INICIAL*/
-main{
-	
+main .profile-posts img {
+	width: 293px;
+	height: 293px;
 }
-	main .profile-content{
+/* Main End */
+/* Mobile First End */
 
+
+/* Media Queries */
+/* Desktop / Tablet*/
+@media (min-width: 768px) {
+	/* Header */
+	header {
+		width: 100%;
+		padding: 20px 25px;
+		text-align: left;
+	}
+	/* Header End */
+
+	/* Main */
+	main {
+		margin-top: 30px;
 	}
 
-	main .highlighted-stories{
-
+	main .profile-content {
+		flex-direction: row;
 	}
 
-	main .profile-posts{
-
+	main .profile-photo {
+		padding-left: 35px;
+		padding-right: 25px;
+		margin-left: 35px;
+		margin-right: 70px;
 	}
+
+	main .profile-photo img {
+		border: 5px double lightgray;
+		border-radius: 50%;
+	}
+
+	main .profile-info h1 {
+		margin-top: 0px;
+		text-align: left;
+	}
+
+	main .profile-info ul {
+		margin-top: 0px;
+	}
+
+	main .profile-info h2 {
+		margin-top: 0px;
+	}
+
+	main .highlighted-stories ul {
+		padding: 30px 50px 30px 40px;
+	}
+
+	main .highlighted-stories ul li {
+		padding-right: 50px;
+		margin: 10px;
+	}
+	/* Main End */
+}
+/* Media Queries End */
